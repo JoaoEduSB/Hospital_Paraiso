@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/fb363496b9.js" crossorigin="anonymous"></script>
+    <title>Paradise Hospital | Coding With Isaac</title>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo"><i class="fas fa-hospital"> paradise</i></a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Reviews</a>
+            <a href="#">Blogs</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div id="menubtn" class="fas fa-bars"></div>
+    </header>
+
+    <section class="home">
+        <div class="content">
+            <h3>Stay healthy, be fit</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam ipsa harum, nulla doloribus suscipit mollitia voluptate officia similique. Eveniet nobis quos aperiam laborum! Hic ea repudiandae eveniet, rerum veritatis asperiores!</p>
+        <a href="#" class="btn">Consult now</a>
+        </div>
+        <div class="image">
+            <img src="img/img1.png">
+        </div>
+    </section>
+
+    <section class="about">
+        <h1 class="heading">about <span>us</span></h1>
+        <div class="wrapper">
+            <div class="image">
+                <img src="img/img2.png">
+            </div>
+            <div class="content">
+                <h3>Why you should choose us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus blanditiis natus quasi nihil nostrum iste possimus ab quaerat incidunt repellat, dicta veniam adipisci animi numquam quisquam perferendis ratione repellendus excepturi.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, accusantium maiores omnis facilis nulla assumenda amet at, ab ducimus laborum minus, dolore in pariatur. Pariatur laudantium molestias velit similique molestiae.</p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h1 class="heading">Our <span>services</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-ambulance"></i>
+                <h3>24/7 ambulance</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, voluptatem!</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+            
+            <div class="box">
+                <i class="fas fa-notes-medical"></i>
+                <h3>Free checkups every tuesday</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, voluptatem!</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-user-md"></i>
+                <h3>Expert consultants</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, voluptatem!</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-procedures"></i>
+                <h3>Good Facility</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, voluptatem!</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-pills"></i>
+                <h3>Pharmacy</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, voluptatem!</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-heart-pulse"></i>
+                <h3>Best care</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis, voluptatem!</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h1 class="heading"><span>contact</span> us</h1>
+
+        <div class="wrapper">
+            <div class="image">
+                <img src="img/img3.png" alt="">
+            </div>
+
+            <form action="">
+                <h3>Book Appointment</h3>
+                <input type="text" placeholder="Your name" class="box">
+                <input type="email" placeholder="Your e-mail" class="box">
+                <input type="number" placeholder="Your phone number" class="box">
+                <input type="date" class="box">
+                <input type="submit" value="Place appointment" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Reviews</a>
+                <a href="#">Blogs</a>
+                <a href="#">Contact</a>
+            </div>
+            
+            <div class="box">
+                <h3>Services Offered</h3>
+                <a href="#">CT scan</a>
+                <a href="#">Diagnosis</a>
+                <a href="#">Ambulance services</a>
+                <a href="#">Children's clinic</a>
+                <a href="#">Pharmacy</a>
+                <a href="#">Dental care</a>
+            </div>
+            
+            <div class="box">
+                <h3>Our socials</h3>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="bottom">&copy; 2024 all rights reserved | <span>Coding with Isaac</span></div>
+    </section>
+
+<script>
+    let menu = document.querySelector('#menubtn'),
+    navbar = document.querySelector('.navbar');
+
+    menu.onclick = () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+    }
+    window.onscroll = () =>{
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('active');
+    }
+</script>
+
+</body>
+</html>
